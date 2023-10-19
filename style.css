@@ -86,7 +86,8 @@ nav ul li a:hover::after{
     display: flex;
     width: 100%;
     max-width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 5%;
+    margin-top: 5%;
     margin-top: 80px;
 }
 
@@ -142,8 +143,8 @@ h1{
 
 
 h2{
-    margin-top: 70px;
-    margin-bottom: 50px;
+    margin-top: 10%;
+    margin-bottom: 10%;
     color: var(--color-text);
     font-family: Abhaya Libre ExtraBold;
     font-size: 70px;
@@ -156,7 +157,7 @@ h2{
 @media screen and (max-width: 950px){
     h2{
         margin-top: 70px;
-        margin-bottom: 50px;
+        margin-bottom: 25px;
         color: var(--color-text);
         font-family: Abhaya Libre ExtraBold;
         font-size: 50px;
@@ -201,6 +202,8 @@ h3{
     width: 705px;
     height: 224px;
     flex-shrink: 0;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 @media screen and (max-width: 950px){
@@ -213,7 +216,9 @@ h3{
         line-height: normal;    
         width: 352px;
         height: 112px;
-        flex-shrink: 0; 
+        flex-shrink: 0;
+        margin-bottom: 5%;
+        margin-top: 5%;
     }
 }
 
@@ -233,6 +238,8 @@ h3{
     height: 224px;
     flex-shrink: 0;
     font-weight: bold;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 @media screen and (max-width: 950px){
@@ -247,6 +254,8 @@ h3{
         height: 112px;
         flex-shrink: 0;
         font-weight: bold;
+        margin-bottom: 5%;
+        margin-top: 5%;
     }
 }
 
@@ -260,7 +269,8 @@ h3{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 30px;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 @media screen and (max-width: 950px){
@@ -274,7 +284,8 @@ h3{
         font-style: normal;
         font-weight: 200;
         line-height: normal;
-        margin-bottom: 30px;
+        margin-bottom: 5%;
+        margin-top: 5%;
     }
 }
 
@@ -289,6 +300,8 @@ h3{
     font-weight: 400;
     line-height: normal;
     font-weight: bold;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 @media screen and (max-width: 950px){
@@ -303,6 +316,8 @@ h3{
         font-weight: 200;
         line-height: normal;
         font-weight: bold;
+        margin-bottom: 5%;
+        margin-top: 5%;
     }
 }
 
@@ -320,6 +335,8 @@ h3{
     padding: 0.5em;
     border-left-color: var(--color-button);
     font-style: italic;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 @media screen and (max-width: 950px){
@@ -334,6 +351,8 @@ h3{
         font-weight: 200;
         line-height: normal;
         font-weight: bold;
+        margin-bottom: 5%;
+        margin-top: 5%;
     }
 }
 
@@ -352,6 +371,8 @@ h3{
     border-left-color: var(--color-button);
     font-style: italic;
     font-weight: bold;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 @media screen and (max-width: 950px){
@@ -370,6 +391,8 @@ h3{
         border-left-color: var(--color-button);
         font-style: italic;
         border-left: solid 0.2em;
+        margin-bottom: 5%;
+        margin-top: 5%;
     }
 }
 
@@ -596,26 +619,36 @@ footer nav{
     margin-top: 50px;
 }
 
+.Titre_foot{
+    display: flex;
+    
+    
+}
+
 .a_venir{
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
-.carte{
-    flex: 1;
+.card {
     display: flex;
-    align-items: center; 
-    justify-content: center; 
-    border: 1px solid #ddd;
-    box-sizing: border-box; 
-    background-color: #f7f7f7; 
-}  
+    flex-basis: 33.33%;
+    flex-grow: 1;    
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
 
 .image-card{
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Garde les proportions de l'image tout en la couvrant entièrement */
+    object-fit: cover;
+}
+
+.image-car{
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -650,11 +683,12 @@ footer nav{
   
   .slide .text {
     position: absolute;
-    top: 50%;
+    top: 120%;
     left: 50%;
+    font-family: Abhaya Libre ExtraBold;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 24px;
+    font-size: 50px;
   }
   
   /* Boutons "précédent" et "suivant" */
