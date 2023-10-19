@@ -621,7 +621,8 @@ footer nav{
 
 .Titre_foot{
     display: flex;
-    
+    max-width: 420px;
+    max-height: 13px;
     
 }
 
