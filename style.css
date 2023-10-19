@@ -72,7 +72,7 @@ nav ul li a:hover::after{
 
 .info_content{
     display: flex;
-    justify-content: space-between;
+    
     max-width: 100%;
     -ms-flex-item-align: center;
     flex-wrap: wrap;
@@ -91,9 +91,6 @@ nav ul li a:hover::after{
     margin-top: 80px;
 }
 
-.image_quote_column{
-    justify-content : space-between;
-}
 
 .grimoire{
     width: 100%;
@@ -156,8 +153,8 @@ h2{
 
 @media screen and (max-width: 950px){
     h2{
-        margin-top: 70px;
-        margin-bottom: 25px;
+        margin-top: 10%;
+        margin-bottom: 10%;
         color: var(--color-text);
         font-family: Abhaya Libre ExtraBold;
         font-size: 50px;
@@ -223,8 +220,7 @@ h3{
 }
 
 .texSpace{
-    margin-top: 40px;
-    margin-bottom: 80px;
+    margin-bottom: 7%;
 }
 
 .texMbold{
@@ -621,8 +617,10 @@ footer nav{
 
 .Titre_foot{
     display: flex;
+    margin-top: 50px;
     max-width: 420px;
-    max-height: 13px;
+    max-height: 34px;
+    font-family: 'Inter', sans-serif; 
     
 }
 
@@ -652,6 +650,21 @@ footer nav{
     height: 100%;
 }
 
+.card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Centrage horizontal du texte */
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent pour une meilleure lisibilité */
+    padding: 10px;
+    border-radius: 5px; /* Bords arrondis pour le conteneur du contenu */
+}
+
+.card-title {
+    margin: 0;
+    color: #fff;
+}
 
 .fade {
     animation-name: fade;
