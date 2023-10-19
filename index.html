@@ -101,7 +101,7 @@
             <h2>
                 Les Expositions
             </h2>
-            <img src="images/exposition_grimoires_celestes.png" alt="Image expositions">
+            <img class="grimoire" src="images/exposition_grimoires_celestes.png" alt="Image expositions">
             <a href="En savoir plus">
                 <img class="image_info" src="images/icone_info.png" alt=" En savoir plus">
             </a>
@@ -110,17 +110,38 @@
             </h3>
         </section>
 
-            <section class="container">
+            <section class="container_news">
                 <h2>
                     À la une
                 </h2>
-                <img src="images/calligraphie_pour_adultes.jpg" alt="Image à la une n°1">
-                <img src="images/le_trigre_et_le_president.png" alt="Image à la une n°2">
-                <img src="images/design_breton.jpg" alt="Image à la une n°3">
-                <img src="images/carte_de_voeux.jpg" alt="Image à la une n°4">
-                <img src="images/vue_du_musee.jpg" alt="Image à la une n°5">
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                      <img src="images/calligraphie_pour_adultes.jpg" alt="Image 1">
+                      <div class="text">Texte pour l'image 1</div>
+                    </div>
+                    <div class="slide fade">
+                      <img src="images/le_tigre_et_le_president.png" alt="Image 2">
+                      <div class="text">Texte pour l'image 2</div>
+                    </div>
+                    <div class="slide fade">
+                      <img src="images/vue_du_musee.jpg" alt="Image 3">
+                      <div class="text">Texte pour l'image 3</div>
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/devanture-musee.jpg" alt="Image 3">
+                        <div class="text">Texte pour l'image 3</div>
+                      </div>
+                      <div class="slide fade">
+                        <img src="images/carte_de_voeux.jpg²" alt="Image 3">
+                        <div class="text">Texte pour l'image 3</div>
+                      </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+
+                </div>
                 <a href="En savoir plus">
-                    <img class="image_info" src="images/icone_info.png" alt=" En savoir plus">
+                    <img class="image_info" src="images/" alt=" En savoir plus">
                 </a>
                 <article>
                     <h3>
@@ -171,18 +192,14 @@
                 <h2>
                     Animations
                 </h2>
-                <h3>La fête du musée</h3>
-                    <p class="HeureA"> 4 mai 2024 - 9 h 00 - 18 h 00</p> 
-                    <img src="images/Animations" alt="Image a_la_une">
-                    <a href="En savoir plus">
-                        <img class="image_info" src="images/icone_info.png" alt=" En savoir plus">
-                </a>
+                
+                  <script src="script.js"></script>
             </section>
+            <h2>
+                À venir
+            </h2>
             <section class="a_venir">
-                <h2>
-                    À venir
-                </h2>
-                <article class="enluminure">
+                <article class="Carte enluminure">
                     <h3>
                         L'enluminure
                     </h3>
@@ -190,8 +207,9 @@
                         11 octobre 2023 <br>
                         9 h 45 - 11 h 35
                     </p>
+                    <img class="image-card" src="images/a_venir_enluminure.png" alt="">
                 </article>
-                <article class="reliure">
+                <article class="Carte reliure">
                     <h3>
                         La reliure
                     </h3>
@@ -199,8 +217,9 @@
                         11 octobre 2023 <br>
                         9 h 45 - 11 h 35
                     </p>
+                    <img class="image-card" src="images/a_venir_livres.png" alt="">
                 </article>
-                <article class="calligraphie">
+                <article class="Carte calligraphie">
                     <h3>
                         Cours de calligraphie
                     </h3>
@@ -208,6 +227,7 @@
                         14 octobre 2023 <br>
                         9 h 45 - 11 h 35
                     </p>
+                    <img class="image-card" src="images/calligraphie_pour_adultes.jpg" alt="">
                 </article>
             </section>
     
@@ -283,21 +303,21 @@
                     <img class="icone_insta" src="images/icone_insta.png" alt="logo logo_Instagram">
                     <img class="logo_PageB"  src="images/logo_MAI_blanc.png" alt="Logo du Musée Atelier de l'Imprimerie de Nantes">        <!--image logo-->
                 </div>
-            <nav>
-                <ul class="link_foot">                                                                       <!--liste non ordonnée-->
-                    <li>                                                                                   <!--definit un element de la liste-->
-                        <a href="accueil.html">Accueil</a>                                              <!--lien vers la page d'accueil-->
-                    </li>
-                    <li>
-                        <a href="nous_decouvrir.html">Nous Découvrir</a>
-                    </li>
-                    <li>
-                        <a href="en_ce_moment.html">En ce Moment</a>
-                    </li>
-                </ul>
-            </nav>
         </div>
     </footer>
+    <nav class="nav_B">
+        <ul class="link_foot">                                                                       <!--liste non ordonnée-->
+            <li>                                                                                   <!--definit un element de la liste-->
+                <a href="accueil.html">Accueil</a>                                              <!--lien vers la page d'accueil-->
+            </li>
+            <li>
+                <a href="nous_decouvrir.html">Nous Découvrir</a>
+            </li>
+            <li>
+                <a href="en_ce_moment.html">En ce Moment</a>
+            </li>
+        </ul>
+    </nav>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
 </script>
 </body>
@@ -312,4 +332,4 @@
 
 
 
-http://localhost:5500/index.html
+htmlhttp://localhost:5500/index.

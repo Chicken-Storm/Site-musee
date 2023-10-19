@@ -94,11 +94,24 @@ nav ul li a:hover::after{
     justify-content : space-between;
 }
 
+.grimoire{
+    width: 100%;
+    height: 700px;
+}
+
 .container_expo{
     margin-left: auto; 
     margin-right: auto;
     padding-left: 75px;
     padding-right: 75px;
+}
+
+.container_news{
+    margin-left: auto; 
+    margin-right: auto;
+    padding-left: 75px;
+    padding-right: 75px; 
+    flex-wrap: wrap;
 }
 
 h1{
@@ -111,6 +124,20 @@ h1{
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+}
+
+@media screen and (max-width: 950px){
+    h1{
+        margin-top: 25px;
+        margin-bottom: 25px;
+        color: var(--color-text);
+        text-align: center;
+        font-family: Abhaya Libre ExtraBold;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 }
 
 
@@ -126,6 +153,20 @@ h2{
     margin-left: 6px;
 }
 
+@media screen and (max-width: 950px){
+    h2{
+        margin-top: 70px;
+        margin-bottom: 50px;
+        color: var(--color-text);
+        font-family: Abhaya Libre ExtraBold;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: 6px; 
+    }
+}
+
 h3{
     margin-top: 25px;
     margin-bottom: 20px;
@@ -135,6 +176,19 @@ h3{
     font-style: normal;
     font-weight: 600;
     line-height: normal; 
+}
+
+@media screen and (max-width: 950px){
+    h3{
+        margin-top: 25px;
+        margin-bottom: 20px;
+        color: var(--color-text);
+        font-family: Inter;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal; 
+    }
 }
 
 .texM{
@@ -147,6 +201,20 @@ h3{
     width: 705px;
     height: 224px;
     flex-shrink: 0;
+}
+
+@media screen and (max-width: 950px){
+    .texM{
+        color: var(--color-text);
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;    
+        width: 352px;
+        height: 112px;
+        flex-shrink: 0; 
+    }
 }
 
 .texSpace{
@@ -167,6 +235,21 @@ h3{
     font-weight: bold;
 }
 
+@media screen and (max-width: 950px){
+    .texMbold{
+        color: var(--color-text);
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;    
+        width: 352px;
+        height: 112px;
+        flex-shrink: 0;
+        font-weight: bold;
+    }
+}
+
 .texS{
     width: 553px;
     height: 185px;
@@ -180,6 +263,21 @@ h3{
     margin-bottom: 30px;
 }
 
+@media screen and (max-width: 950px){
+    .texS{
+        width: 276px;
+        height: 92px;
+        flex-shrink: 0;
+        color: var(--color-text);
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+        margin-bottom: 30px;
+    }
+}
+
 .texSbold{
     width: 553px;
     height: 185px;
@@ -191,6 +289,21 @@ h3{
     font-weight: 400;
     line-height: normal;
     font-weight: bold;
+}
+
+@media screen and (max-width: 950px){
+    .texSbold{
+        width: 276px;
+        height: 92px;
+        flex-shrink: 0;
+        color: var(--color-text);
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+        font-weight: bold;
+    }
 }
 
 .texXS{
@@ -207,6 +320,21 @@ h3{
     padding: 0.5em;
     border-left-color: var(--color-button);
     font-style: italic;
+}
+
+@media screen and (max-width: 950px){
+    .texXS{
+        width: 138px;
+        height: 46px;
+        flex-shrink: 0;
+        color: var(--color-text);
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+        font-weight: bold;
+    }
 }
 
 .texXSbold{
@@ -278,7 +406,6 @@ footer {
     max-width: 1437px;
     max-height: 1000px;
     color: var(--color-text);
-    font-family: #dc143c Text;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -306,21 +433,6 @@ footer nav{
     box-sizing: border-box
 }
 
-.image-car{
-    width: 100%;
-    height: 700px;
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: 2s;
-
-}
-
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
 
 .icone_insta{
     max-width: 47px;
@@ -358,6 +470,7 @@ footer nav{
     height: 500px;
     width: 600px;
     font-size: 25px;
+    flex-wrap: wrap;
 }
 
 .s_y_rendre{
@@ -423,7 +536,7 @@ footer nav{
     max-height: 325px;
     font-size: 24px;
     font-family: 'Inter', sans-serif;
-    padding-left: 113px;       
+    padding-left: 11px;       
 }
 .Foot_Texte2{
     max-width: 402px;
@@ -437,7 +550,7 @@ footer nav{
     justify-content: end;
     padding-right: 20px;
     gap: 44px;
-    margin-top: 150px;
+    margin-top: 35px;
     
 }
 
@@ -455,5 +568,91 @@ footer nav{
 
 .link_foot{
     display: flex;
-    gap: 50px
+    justify-content: center;
+    gap: 400px;
 }
+.nav_B{
+    margin:0px;
+    margin-right: 10%;
+    margin-top: 50px;
+}
+
+.a_venir{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.carte{
+    flex: 1;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    border: 1px solid #ddd;
+    box-sizing: border-box; 
+    background-color: #f7f7f7; 
+}  
+
+.image-card{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garde les proportions de l'image tout en la couvrant entièrement */
+}
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slide .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+  }
+  
+  /* Boutons "précédent" et "suivant" */
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  /* Animation du diaporama */
