@@ -354,6 +354,25 @@ h3{
     font-weight: bold;
 }
 
+@media screen and (max-width: 950px){
+    .texXSbold{
+        width: 138px;
+        height: 46px;
+        flex-shrink: 0;
+        color: var(--color-text);
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+        font-weight: bold;
+        padding: 0.2em;
+        border-left-color: var(--color-button);
+        font-style: italic;
+        border-left: solid 0.2em;
+    }
+}
+
 nav{
     flex-grow: 1;
     font-family: Abhaya Libre ExtraBold;
