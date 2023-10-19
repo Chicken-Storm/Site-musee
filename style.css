@@ -1,0 +1,459 @@
+:root{/*-- pour declarer une variable*/
+    --color-text : #fff;
+    --color-button : #820029;
+    --color-button2 :#580101;
+    --color-background :#1A1A1A;
+    --color-black :#000;
+}
+
+main{
+    max-width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;   /*sera inutile a terme*/
+}
+::-webkit-scrollbar-track {
+    background: var(--color-black);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-button);
+}
+
+.link{   /* . pour une class*/
+    display : flex;
+    gap : 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body{ 
+    color: var(--color-text);
+    background: var(--color-background);
+
+}
+
+nav ul li a{
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+
+}
+
+nav ul li a::after{
+    content: '';
+    width: 6;
+    height: 6px;
+    background: var(--color-button);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+.logo{
+    width: 280px;
+}
+
+.container_info{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 75px;
+    padding-right: 75px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info_content{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    -ms-flex-item-align: center;
+    flex-wrap: wrap;
+}
+
+.text_column{
+    padding-left: 30px;
+}
+
+.devanture_musee{
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+    margin-top: 80px;
+}
+
+.image_quote_column{
+    justify-content : space-between;
+}
+
+.container_expo{
+    margin-left: auto; 
+    margin-right: auto;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+h1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: var(--color-text);
+    text-align: center;
+    font-family: Abhaya Libre ExtraBold;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+
+h2{
+    margin-top: 70px;
+    margin-bottom: 50px;
+    color: var(--color-text);
+    font-family: Abhaya Libre ExtraBold;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-left: 6px;
+}
+
+h3{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    color: var(--color-text);
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+}
+
+.texM{
+    color: var(--color-text);
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    width: 705px;
+    height: 224px;
+    flex-shrink: 0;
+}
+
+.texSpace{
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.texMbold{
+    color: var(--color-text);
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    width: 705px;
+    height: 224px;
+    flex-shrink: 0;
+    font-weight: bold;
+}
+
+.texS{
+    width: 553px;
+    height: 185px;
+    flex-shrink: 0;
+    color: var(--color-text);
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.texSbold{
+    width: 553px;
+    height: 185px;
+    flex-shrink: 0;
+    color: var(--color-text);
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-weight: bold;
+}
+
+.texXS{
+    width: 554px;
+    height: 121px;
+    flex-shrink: 0;   
+    color: var(--color-text);
+    font-family: Abhaya Libre;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-left: solid 0.2em;
+    padding: 0.5em;
+    border-left-color: var(--color-button);
+    font-style: italic;
+}
+
+.texXSbold{
+    width: 554px;
+    height: 121px;
+    flex-shrink: 0;   
+    color: var(--color-text);
+    font-family: Abhaya Libre;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-left: solid 0.2em;
+    padding: 0.2em;
+    border-left-color: var(--color-button);
+    font-style: italic;
+    font-weight: bold;
+}
+
+nav{
+    flex-grow: 1;
+    font-family: Abhaya Libre ExtraBold;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--color-text);
+    margin-left: 10%;
+}
+
+#logo{ /*id*/
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1%;
+    padding-left: 1%;
+}
+
+.image_info{
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.bouton_billeterie{
+    background-color: var(--color-button);
+    padding: 35px 100px;
+    margin-bottom: 15px;
+}
+
+#header-droite{
+    display: flex;
+}
+
+#etatOuverture img {
+    vertical-align: middle;
+    width: 29px;
+    height: 20px;
+}
+
+footer {
+    display: flex;
+    max-width: 1437px;
+    max-height: 1000px;
+    color: var(--color-text);
+    font-family: #dc143c Text;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-content: space-around;
+}
+
+
+
+footer nav{
+    display : flex;
+    flex-grow: 1;
+    font-family: Abhaya Libre ExtraBold;
+    justify-content: space-around;
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.Facebook{
+    display : flex;
+
+}
+
+* {
+    box-sizing: border-box
+}
+
+.image-car{
+    width: 100%;
+    height: 700px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.icone_insta{
+    max-width: 47px;
+    max-height: 46px;
+    
+}
+.icone_facebook{    
+    max-width: 50px;
+    max-height: 44px;
+}
+.icone_mail{
+    max-width: 28px;
+    max-height: 28px;
+}
+.icone_telephone{
+    max-width: 28px;
+    max-height: 30px;
+}
+.icone_gps{
+    max-width: 33px;
+    max-height: 39px;
+}
+
+.horraire_comment_s_y_rendre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.horaires{
+    padding: 90px;
+    background-color: var(--color-button);
+    height: 500px;
+    width: 600px;
+    font-size: 25px;
+}
+
+.s_y_rendre{
+    display: flex;
+    flex-direction: column;
+    padding: 90px;
+    background-color: var(--color-button);
+    height: 500px;
+    width: 600px;
+    font-size: 25px;
+}
+
+.colonne_picto{
+    display: flex;
+    align-items: center;
+}
+
+.colonne_picto img{
+    margin-right: 5%;
+    width: 100px;
+    height: 100px;
+}
+
+.heure{
+    font-weight: bold;
+}
+
+.map{
+    width: 100%;
+}
+
+.logo_MAI_blanc{
+    max-width: 132px;
+    max-height: 107px;
+
+
+}
+.Mail1{
+    max-width: 104px;
+    max-height: 74px;
+    
+}
+.Tel1{
+    max-width: 97px;
+    max-height: 77px;
+}
+.Musee1{
+    max-width: 161px;
+    max-height: 115px;
+}
+.Gps1{
+    max-width: 154px;
+    max-height: 134px;
+}
+
+.logo_PageB{
+    max-width: 132px;
+    max-height: 108px;
+}
+
+.Foot_Texte{
+    max-width: 680px;
+    max-height: 325px;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    padding-left: 113px;       
+}
+.Foot_Texte2{
+    max-width: 402px;
+    max-height: 132px;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;           
+}
+
+.logo_BD{
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+    gap: 44px;
+    margin-top: 150px;
+    
+}
+
+.Picto_droite{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Picto_contact{
+    display: flex;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.link_foot{
+    display: flex;
+    gap: 50px
+}

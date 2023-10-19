@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">                                            <!--definit le language en anglais-->
+<head>
+    <meta charset="UTF-8">                                  <!--affiche les accents-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Musée de l'Imprimerie de Nantes</title> 
+    <link rel="stylesheet" href="reset.css">                            <!--titre de la page-->
+    <link rel="stylesheet" href="style.css">                <!--lie à la page css-->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts.js" defer></script>                <!--lie à la page JS-->
+</head>
+
+
+<body>  
+    <header>
+        <img id="logo" src="images/logo_MAI_blanc.png" alt="Logo du Musée Atelier de l'Imprimerie de Nantes">        <!--image logo-->
+        <nav>
+            <ul class="link">                                                                       <!--liste non ordonnée-->
+                <li>                                                                                                <!--definit un element de la liste-->
+                    <a href="index.html">Accueil</a>                                              <!--lien vers la page d'accueil-->
+                </li>
+                <li>
+                    <a href="content.html">Nous Découvrir</a>
+                </li>
+                <li>
+                    <a href="en_ce_moment.html">En ce Moment</a>
+                </li>
+                <div class="header-droite">
+                    <li class="bouton_billeterie">                                                      <!--bouton billeterie-->
+                        <a href="billeterie.html">Billeterie</a>
+                    </li>
+                    <li id="etatOuverture">
+                        <img class="imageCercleVert" src="images/cercle_vert_en_ligne.png" alt="Cercle en Vert pour indiquer si le musée est ouvert ou non">
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="presentation">
+            <h1>Voyage à travers l'Histoire de l'Impression !</h1>
+        </section>
+        <section class="presentation"> 
+            <div class="image-slideshow">
+                <div class="image fade">
+                <img class="image-car" src="images/buste_gutemberg.jpg" alt="Mountain Top">
+                </div>
+                <div class="image fade">
+                <img class="image-car" src="images/plaque_de _plombs.jpg" alt="Palm Trees">
+                </div>
+            </div>
+        </section>
+
+        <section class="container_info">
+            <h2>
+                Informations sur le musée
+            </h2>
+
+            <p class="texSpace texM">
+            Tout naturellement, l’idée de
+            <b class="texMbold">préserver ce qui fut cinq cents ans de communication de la pensée,</b>
+            germa dans l'esprit de deux hommes,
+            <b class="texMbold">Sylvain Chiffoleau, maître-imprimeur et Robert Colombeau, compositeur typographe,</b>
+            relayés en cela par les municipalités successives.
+            </p>
+
+            <div class="info_content">
+                <div class="text_column">
+                    <p class="texS">
+                        Une solide équipe de professionnels de l’imprimerie,
+                        toutes spécialités confondues, où chacun se reconnaîtra,
+                        œuvra des semaines durant pour que le projet prenne corps. 
+                        C’est ainsi que <b class="texSbold">le 6 décembre 1986 le Musée municipal de l’imprimerie ouvrit ses portes.</b>
+                    </p>
+                    <p class="texS">
+                        À juste titre, la ville de Nantes peut s’enorgueillir deposséder à ce jour, 
+                        un <b class="texSbold">lieu unique en Europe, véritable conservatoire des techniques anciennes et de leurs traditions,</b>
+                        transmises avec amour par un personnel passionné et hautement qualifié.
+                    </p>
+                    <p class="texS">
+                        Le fil conducteur qui permit de réunir les collections présentées dans les différents ateliers,
+                        de la <b class="texSbold">fabrication du papier</b> en passant par la composition
+                        et <b class="texSbold">l’impression du texte</b> et de ses illustrations pour <b class="texSbold">aboutir à la reliure-dorure.</b> 
+                    </p>
+                </div>
+                <div class="image_quote_column">
+                    <img class="devanture_musee" src="images/devanture_google_maps.png" alt="Devanture du Musée Atelier de l'Imprimerie de Nantes">
+                    <p class="texXS"> 
+                        «Ensemble indissociable, le Musée de l’imprimerie de Nantes couvre les domaines culturel et artistique, 
+                        historique et patrimonial,
+                        éducatif et pédagogique, social et citoyen. </br>Il s’adresse à tous les âges et à toutes les couches de la population.»
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container_expo">
+            <h2>
+                Les Expositions
+            </h2>
+            <img src="images/exposition_grimoires_celestes.png" alt="Image expositions">
+            <a href="En savoir plus">
+                <img class="image_info" src="images/icone_info.png" alt=" En savoir plus">
+            </a>
+            <h3>
+                Grimoires Célestes et Lune sur Papier Couché
+            </h3>
+        </section>
+
+            <section class="container">
+                <h2>
+                    À la une
+                </h2>
+                <img src="images/calligraphie_pour_adultes.jpg" alt="Image à la une n°1">
+                <img src="images/le_trigre_et_le_president.png" alt="Image à la une n°2">
+                <img src="images/design_breton.jpg" alt="Image à la une n°3">
+                <img src="images/carte_de_voeux.jpg" alt="Image à la une n°4">
+                <img src="images/vue_du_musee.jpg" alt="Image à la une n°5">
+                <a href="En savoir plus">
+                    <img class="image_info" src="images/icone_info.png" alt=" En savoir plus">
+                </a>
+                <article>
+                    <h3>
+                        Cours de calligraphie pour adultes initiés
+                    </h3>
+                </article>
+            </section>
+            <div class="horraire_comment_s_y_rendre">
+                <div>
+                    <h2>
+                        Les Horaires
+                    </h2>
+                    <section class="horaires">
+                        <p class="jour"> Lundi, Mardi, Mercredi, Jeudi, Vendredi :</p>
+                        <br>
+                        <p class="heure">10h - 12h | 14h - 17h30</p>
+                        <br>
+                        <br>
+                        <p class="jour"> Samedi  :  (sauf Juillet et Août)</p>
+                        <br>
+                        <p class="heure">10h - 12h | 14h - 17h30</p>
+                        <br>
+                        <br>
+                        <p class="dimanche"> Fermé tout les Dimanches et les jours fériés</p>
+                    </section>
+                </div>
+                <div>
+                    <h2>
+                        Comment s'y rendre
+                    </h2>
+                    <section class="s_y_rendre">
+                        <div class="colonne_picto">
+                            <img src="images/icone_tram.png" alt="Icône de tramway">
+                            <p class="Parking_S">Parking médiathèque</p>
+                        </div>
+                        <div class="colonne_picto">
+                            <img src="images/icone_voiture.png" alt="Icône de voiture">
+                            <p class="Parking_S">Arrêt médiathèque sur la ligne 1</p>
+                        </div>
+                        <div class="colonne_picto">
+                            <img src="images/icone_velo.png" alt="Icône de vélo">
+                            <p class="Parking_S">Arrêt médiathèque</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <section class="container">
+                <h2>
+                    Animations
+                </h2>
+                <h3>La fête du musée</h3>
+                    <p class="HeureA"> 4 mai 2024 - 9 h 00 - 18 h 00</p> 
+                    <img src="images/Animations" alt="Image a_la_une">
+                    <a href="En savoir plus">
+                        <img class="image_info" src="images/icone_info.png" alt=" En savoir plus">
+                </a>
+            </section>
+            <section class="a_venir">
+                <h2>
+                    À venir
+                </h2>
+                <article class="enluminure">
+                    <h3>
+                        L'enluminure
+                    </h3>
+                    <p>
+                        11 octobre 2023 <br>
+                        9 h 45 - 11 h 35
+                    </p>
+                </article>
+                <article class="reliure">
+                    <h3>
+                        La reliure
+                    </h3>
+                    <p>
+                        11 octobre 2023 <br>
+                        9 h 45 - 11 h 35
+                    </p>
+                </article>
+                <article class="calligraphie">
+                    <h3>
+                        Cours de calligraphie
+                    </h3>
+                    <p>
+                        14 octobre 2023 <br>
+                        9 h 45 - 11 h 35
+                    </p>
+                </article>
+            </section>
+    
+            <section class="retrouvez_nous">
+                <h2>
+                    Retrouvez nous
+                </h2>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6446.220763216161!2d-1.5624237908636711!3d47.210673552421795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ec02f7edb9ff%3A0x3c941bd588e833bf!2sMus%C3%A9e%20Atelier%20de%20l&#39;Imprimerie%20de%20Nantes!5e0!3m2!1sfr!2sfr!4v1697624647901!5m2!1sfr!2sfr" width="1270" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </script>
+
+                <div>
+                    <div class="colonne_gauche">                        
+                        <img class="Musee1" src="images/icone_musee.png" alt="Icône de Musée">
+                        <p class="Titre_Info_Bas_S">Musée Atelier de l'Imprimerie de Nantes</p>
+                        <p class="Taille_Bas_XS">24 Quai de la Fosse 44000 Nantes </p>
+                    </div>
+                    <div class="colonne_droite">
+                        <div class="colonne_picto">
+                            <img class="Gps1" src="images/icone_gps.png" alt="Icône de GPS">
+                            <img class="Tel1" src="images/icone_telephone.png" alt="Icône de téléphone">
+                            <img class="Mail1" src="images/icone_mail.png" alt="Icône de mail">
+                        </div>
+                        <div class="colonne_info">
+                            <p class="Titre_Info_Bas_S">Comment y aller ?</p>
+                            <p class="Taille_Bas_XS">
+                                Arrêt médiathèque sur la ligne 1 <br>
+                                Parking Médiathèque, Gloriette, <br> 
+                                petite Hollande (payant)
+                            </p>
+                            <p class="Titre_Info_Bas_S">Appelez-nous</p>
+                            <p class="Taille_Bas_XS">02 40 73 26 55</p>
+                            <p class="Titre_Info_Bas_S">Envoyez-nous un mail</p>
+                            <p class="Taille_Bas_XS">info@musee-imprimerie.com</p>
+                        </div>
+                    </div>
+            </section>
+    </main>
+    
+<br>
+<br>
+<br>
+    <footer>
+        <div class="footer_gauche">
+            <p class="Titre_foot">Le Musée de l’imprimerie de Nantes</p>
+            <p class="Foot_Texte">Responsable de publication : Jean-Yves Marin <br> HébergeurOVH<br>
+                140 quai du Sartel 59 100 Roubaix France.<br>
+                Géré par xpress2people<br>
+                Créditsphotographies : Pro arte graphica<br>
+                Réalisation du site Web avec le CMS WordPress : MESH<br>
+                contact : clement@mesh-design.fr<br>
+                Webdesign par les étudiants CRG de Grafipolis à Nantes <br>   
+                Ce Site Web Responsive fonctionne sur les navigateurs suivants :IE9, IE10, IE11, Firefox, Safari, Opera et Chrome.
+             </p>
+        </div>
+        <div class="footer_droit">
+            <div class="Picto_droite">
+                <div class="Picto_contact">
+                    <img class="icone_gps" src="images/icone_gps.png" alt="icone gps">
+                    <p class="Foot_Texte2">24 quai de la Fosse 44000 NANTES </p>
+                </div>
+                <div class="Picto_contact">
+                    <img class="icone_telephone" src="images/icone_telephone.png" alt="Picto_Téléphone">
+                    <p class="Foot_Texte2">tél : 02.40.73.26.55 </p>
+                </div>
+                <div class="Picto_contact">
+                    <img class="icone_mail" src="images/icone_mail.png" alt="Picto_Mail">
+                    <p class="Foot_Texte2">mail : info@musee-imprimerie.com </p>
+                </div>
+            </div>
+                <div class="logo_BD">
+                    <img class="icone_facebook" src="images/icone_facebook.png" alt="logo logo_Facebook">
+                    <img class="icone_insta" src="images/icone_insta.png" alt="logo logo_Instagram">
+                    <img class="logo_PageB"  src="images/logo_MAI_blanc.png" alt="Logo du Musée Atelier de l'Imprimerie de Nantes">        <!--image logo-->
+                </div>
+            <nav>
+                <ul class="link_foot">                                                                       <!--liste non ordonnée-->
+                    <li>                                                                                   <!--definit un element de la liste-->
+                        <a href="accueil.html">Accueil</a>                                              <!--lien vers la page d'accueil-->
+                    </li>
+                    <li>
+                        <a href="nous_decouvrir.html">Nous Découvrir</a>
+                    </li>
+                    <li>
+                        <a href="en_ce_moment.html">En ce Moment</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+http://localhost:5500/index.html
