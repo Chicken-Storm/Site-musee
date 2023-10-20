@@ -24,9 +24,12 @@
     text-decoration: none;
     display: inline-block;
     padding: 15px 30px;
-    width: 100%;
     font-size: 25px;
     margin-bottom: 10px;
+}
+
+.block_bouton_billeterie .button-link {
+    width: 100%;
 }
       
 .block_bouton_billeterie{
@@ -1046,5 +1049,4 @@ footer nav{
 
 .Partenaires_{
     display: flex;
-    
 }
