@@ -28,6 +28,16 @@
     margin-bottom: 10px;
 }
 
+.button_slider{
+    position: absolute;
+    top: 850px;
+    padding: 10px 60px;
+}
+
+.boutonEnHaut{
+    bottom: 300px;
+}
+
 .block_bouton_billeterie .button-link {
     width: 100%;
 }
@@ -1052,6 +1062,7 @@ footer nav{
 
 .Partenaires_{
     display: flex;
+    flex-direction: column;
 }
 
 .Content_P{
@@ -1078,4 +1089,19 @@ footer nav{
     max-width: 422px;
     max-height: 186px;
 
+}
+
+.Lien_content_P{
+    display: flex;
+    flex-direction: column;
+}
+
+.boutonEnHaut {
+    bottom: -190px;
+}
+
+@media screen and (max-width: 1100px){
+    .boutonEnHaut{
+        display: none;
+    }
 }
