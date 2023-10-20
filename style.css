@@ -21,12 +21,19 @@
     background: var(--color-light-red);
     color: var(--color-white);
     padding-right: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
     text-decoration: none;
     display: inline-block;
+    padding: 15px 30px;
+    width: 100%;
+    font-size: 25px;
+    margin-bottom: 10px;
 }
       
+.block_bouton_billeterie{
+    width: 250px;
+    text-align: center;
+}
+
 .button-link img {
     display: inline-block;
     vertical-align: middle;
@@ -1037,4 +1044,7 @@ footer nav{
 }
     
 
-
+.Partenaires_{
+    display: flex;
+    
+}

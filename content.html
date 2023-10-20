@@ -10,29 +10,33 @@
 </head>
 <body>
     <header>
-        <img id="logo" src="images/logo_MAI_blanc.png" alt="Logo du Musée Atelier de l'Imprimerie de Nantes">        <!--image logo-->
-        <nav>
-            <ul class="link">                                                                       <!--liste non ordonnée-->
-                <li>                                                                                                <!--definit un element de la liste-->
-                    <a href="index.html">Accueil</a>                                              <!--lien vers la page d'accueil-->
+        <button class="burger-menu">
+            <img src="images/menu_burger.png" alt="">
+            <p>MENU</p>
+        </button>
+        <img id="logo" src="images/logo_MAI_blanc.png" alt="Logo du Musée Atelier de l'Imprimerie de Nantes">   <!--image logo-->
+        <nav>                                                                                                   <!--menu-->
+            <ul class="link">                                                                                   <!--liste non ordonnée-->
+                <li>                                                                                            <!--définit un élément de la liste-->
+                    <a href="index.html">Accueil</a>                                                            <!--lien vers la page d'accueil-->
                 </li>
                 <li>
-                    <a href="content.html">Nous Découvrir</a>
+                    <a href="content.html">Nous Découvrir</a>                                                   <!--lien vers la page contenu-->
                 </li>
                 <li>
-                    <a href="en_ce_moment.html">En ce Moment</a>
+                    <a href="en_ce_moment.html">En ce Moment</a>                                                <!--Faux lien-->
                 </li>
-                <div class="header-droite">
-                    <li class="bouton_billeterie">                                                      <!--bouton billeterie-->
-                        <a href="billeterie.html">Billeterie</a>
-                    </li>
-                    <li>
-                        <div id="etatOuverture">
-                            <img class="ImageCercleVert" src="images/cercle_vert_en_ligne.png" alt="Cercle en Vert pour indiquer si le musée est ouvert ou non">
-                            Ouvert de 10h à 12h    
-                        </div>
-                    </li>
-                </div>
+                
+                <li   class="block_bouton_billeterie">                                                                                           <!--Bouton billeterie-->
+                    <a class="button-link" href="lien billeterie">                                   <!--Faux lien-->
+                        Billeterie
+                    </a>
+                    
+                    <div id="etatOuverture">                                                                     <!--horaires-->
+                        <img src="images/cercle_vert_en_ligne.png" alt="Cercle Vert indiquant si le musée est ouvert ou non">
+                    </div>
+                </li>
+
             </ul>
         </nav>
     </header>
@@ -141,69 +145,98 @@
         
         </section>
         
-        <div>       <!--le maps et les horaires/comment venir-->
-            <div class="colonne_gauche">
-                <img src="images/icone_musee.png" alt="Icône de Musée">
+        <article class="Retrouvez">
+            <h2>Retrouvez nous </h2> 
+        </article>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6446.220763216161!2d-1.5624237908636711!3d47.210673552421795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ec02f7edb9ff%3A0x3c941bd588e833bf!2sMus%C3%A9e%20Atelier%20de%20l&#39;Imprimerie%20de%20Nantes!5e0!3m2!1sfr!2sfr!4v1697624647901!5m2!1sfr!2sfr" width="1270" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                
+        <section class="retrouvez_nous">
+            <div class="colonne_gauche">                        
+                <img class="Musee1" src="images/icone_musee.png" alt="Icône de Musée">
                 <p class="Titre_Info_Bas_S">Musée Atelier de l'Imprimerie de Nantes</p>
                 <p class="Taille_Bas_XS">24 Quai de la Fosse 44000 Nantes </p>
             </div>
-            <div class="colonne_droite">
-                <div class="colonne_picto">
-                    <img src="images/icone_gps.png" alt="Icône de GPS">
-                    <img src="images/icone_telephone.png" alt="Icône de téléphone">
-                    <img src="images/icone_mail.png" alt="Icône de mail">
+                <div class="colonne_droite">
+                    <div class="colonne_picto">
+                        <img class="Gps1" src="images/icone_gps.png" alt="Icône de GPS">
+                        <div class="colonne_picto2">
+                            <p class="Titre_Info_Bas_S">Comment y aller ?</p>
+                            <p class="Taille_Bas_XS">
+                            Arrêt médiathèque sur la ligne 1 
+                            Parking Médiathèque, Gloriette, 
+                            petite Hollande (payant)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="colonne_picto">
+                        <img class="Tel1" src="images/icone_telephone.png" alt="Icône de téléphone">
+                        <div class="colonne_picto2">
+                            <p class="Titre_Info_Bas_S">Appelez-nous</p>
+                            <p class="Taille_Bas_XS">02 40 73 26 55</p>
+                        </div>
+                    </div>
+                    <div class="colonne_picto">
+                        <img class="Mail1" src="images/icone_mail.png" alt="Icône de mail">
+                        <div class="colonne_picto2">
+                            <p class="Titre_Info_Bas_S">Envoyez-nous un mail</p>
+                            <p class="Taille_Bas_XS">info@musee-imprimerie.com</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="colonne_info">
-                    <p class="Titre_Info_Bas_S">Comment y aller ?</p>
-                    <p class="Taille_Bas_XS">
-                        Arrêt médiathèque sur la ligne 1 <br>
-                        Parking Médiathèque, Gloriette, <br> 
-                        petite Hollande (payant)
-                    </p>
-                    <p class="Titre_Info_Bas_S">Appelez-nous</p>
-                    <p class="Taille_Bas_XS">02 40 73 26 55</p>
-                    <p class="Titre_Info_Bas_S">Envoyez-nous un mail</p>
-                    <p class="Taille_Bas_XS">info@musee-imprimerie.com</p>
-                </div>
+        </section>
+</main>
+
+<br>
+<br>
+<br>
+<p class="Titre_foot">Le Musée de l’imprimerie de Nantes</p>
+<footer>
+    <div class="footer_gauche">
+        <p class="Foot_Texte">Responsable de publication : Jean-Yves Marin <br> HébergeurOVH<br>
+            140 quai du Sartel 59 100 Roubaix France.<br>
+            Géré par xpress2people<br>
+            Créditsphotographies : Pro arte graphica<br>
+            Réalisation du site Web avec le CMS WordPress : MESH<br>
+            contact : clement@mesh-design.fr<br>
+            Webdesign par les étudiants CRG de Grafipolis à Nantes <br>   
+            Ce Site Web Responsive fonctionne sur les navigateurs suivants :IE9, IE10, IE11, Firefox, Safari, Opera et Chrome.
+         </p>
+    </div>
+    <div class="footer_droit">
+        <div class="Picto_droite">
+            <div class="Picto_contact">
+                <img class="icone_gps" src="images/icone_gps.png" alt="icone gps">
+                <p class="Foot_Texte2">24 quai de la Fosse 44000 NANTES </p>
+            </div>
+            <div class="Picto_contact">
+                <img class="icone_telephone" src="images/icone_telephone.png" alt="Picto_Téléphone">
+                <p class="Foot_Texte2">tél : 02.40.73.26.55 </p>
+            </div>
+            <div class="Picto_contact">
+                <img class="icone_mail" src="images/icone_mail.png" alt="Picto_Mail">
+                <p class="Foot_Texte2">mail : info@musee-imprimerie.com </p>
             </div>
         </div>
-    </main>
-
-    <footer>
-        <p class="Titre_foot">Le Musée de l’imprimerie de Nantes</p>
-            <p class="Foot_Texte">Responsable de publication : Jean-Yves Marin <br>
-                HébergeurOVH<br>
-                140 quai du Sartel 59 100 Roubaix France.<br>
-                Géré par xpress2people<br>
-                Créditsphotographies : Pro arte graphica<br>
-                Réalisation du site Web avec le CMS WordPress : MESH<br>
-                contact : clement@mesh-design.fr<br>
-                Webdesign par les étudiants CRG de Grafipolis à Nantes <br>   
-                Ce Site Web Responsive fonctionne sur les navigateurs suivants :IE9, IE10, IE11, Firefox, Safari, Opera et Chrome.
-            </p>
-            <p class="Foot_Texte">24 quai de la Fosse 44000 NANTES </p>
-            <p class="Foot_Texte">tél : 02.40.73.26.55 </p>
-            <p class="Foot_Texte">mail : info@musee-imprimerie.com </p>
-                <img src="images/icone_gps.png" alt="icone gps">
-                <img src="images/icone_telephone.png" alt="Picto_Téléphone">
-                <img src="images/icone_mail.png" alt="Picto_Mail">
-                <img src="images/icone_facebook.png" alt="logo logo_Facebook">
-                <img src="images/icone_insta.png" alt="logo logo_Instagram">
-                <img src="images/logo_MAI_blanc.png" alt="Logo du Musée Atelier de l'Imprimerie de Nantes">        <!--image logo-->
-            <nav>
-                <ul class="link_foot">                                                                       <!--liste non ordonnée-->
-                    <li>                                                                                   <!--definit un element de la liste-->
-                        <a href="accueil.html">Accueil</a>                                              <!--lien vers la page d'accueil-->
-                    </li>
-                    <li>
-                        <a href="nous_decouvrir.html">Nous Découvrir</a>
-                    </li>
-                    <li>
-                        <a href="en_ce_moment.html">En ce Moment</a>
-                    </li>
-                </ul>
-            </nav>
-    </footer>
-
+            <div class="logo_BD">
+                <a href="https://www.facebook.com/MuseeImprimerieNantes/" ><img class="icone_facebook" src="images/icone_facebook.png" alt="logo logo_Facebook"></a>
+                <a href="https://instagram.com/musee_imprimerie_nantes?igshid=MzRlODBiNWFlZA=="><img class="icone_insta" src="images/icone_insta.png" alt="logo logo_Instagram"></a>
+                <a href="" ><img class="logo_PageB"  src="images/logo_MAI_blanc.png" alt="Logo du Musée Atelier de l'Imprimerie de Nantes"></a> 
+            </div>
+    </div>
+</footer>
+<nav class="nav_B">
+    <ul class="link_foot">                                                                       <!--liste non ordonnée-->
+        <li>                                                                                   <!--definit un element de la liste-->
+            <a href="accueil.html">Accueil</a>                                              <!--lien vers la page d'accueil-->
+        </li>
+        <li>
+            <a href="nous_decouvrir.html">Nous Découvrir</a>
+        </li>
+        <li>
+            <a href="en_ce_moment.html">En ce Moment</a>
+        </li>
+    </ul>
+</nav>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</script>
 </body>
 </html>
