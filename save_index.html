@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
                                     <!--Métadonnées et liens-->
 <head>
@@ -39,7 +39,7 @@
                         </div>
                     </button>
                     
-                    <li id="etatOuverture">                                                                     <!--horaires-->
+                    <li id="etatOuverture">
                         <img src="images/cercle_vert_en_ligne.png" alt="Cercle Vert indiquant si le musée est ouvert ou non">
                     </li>
                 </div>
@@ -48,36 +48,29 @@
         </nav>
     </header>
 
-                                    <!--Contenu principal de la page-->
-    <main>
                                     <!--Titre et Slider-->
-        <h1>Voyage à travers l'Histoire de l'Impression !</h1>          <!--Grand titre (unique à la page)-->
+    <main>
+        <section class="presentation">
+            <h1>Voyage à travers l'Histoire de l'Impression !</h1>
+        </section>
+        <section class="presentation"> 
             <div class="image-slideshow">
-
-                <div class="image fade">                                <!--class image et fade-->
-                    <img class="image-car" src="images/buste_gutemberg.jpg" alt="Buste de Gutenberg">
+                <div class="image fade">
+                <img class="image-car" src="images/buste_gutemberg.jpg" alt="Mountain Top">
                 </div>
                 <div class="image fade">
-                    <img class="image-car" src="images/plaque_de _plombs.jpg" alt="Plaques de plombs">
+                <img class="image-car" src="images/plaque_de _plombs.jpg" alt="Palm Trees">
                 </div>
             </div>
+        </section>
 
-                <button class="button_billeterie_slider" href="lien billeterie">                          <!--Faux lien-->
-                    <div class="square_info">
-                        <img class="image_info" src="images/icone_info.png" alt="Billeterie" /> <!--C'EST L'IMAGE BILLET QU'IL FAUT-->
-                    </div>
-                    <div>
-                        <p class="texS Space_savoir_plus">Billeterie</p>
-                    </div>
-                </button>
-
-                                    <!--Infos sur le Musée-->
+                                                            <!--INFOS SUR LE MUSEE-->
         <section class="container_info">
             <h2>
-                Informations sur le musée           <!--Titre h2-->
+                Informations sur le musée
             </h2>
 
-            <p class="texM">                        <!--Texte alternant entre regular et gras-->
+            <p class="texSpace texM">
             Tout naturellement, l’idée de
             <b class="texMbold">préserver ce qui fut cinq cents ans de communication de la pensée,</b>
             germa dans l'esprit de deux hommes,
@@ -115,20 +108,19 @@
             </div>
         </section>
 
-                                    <!--Expositions-->
         <section class="container_expo">
             <h2>
                 Les Expositions
             </h2>
             <img class="grimoire" src="images/exposition_grimoires_celestes.png" alt="Image expositions">
 
-                                    <!--Bouton-->
-            <button class="button_savoir_plus" href="lien en savoir plus">                          <!--Faux lien-->
-                <div class="square_info">
-                    <img class="image_info" src="images/icone_info.png" alt="En savoir plus" />
+                                <!--BOUTON-->
+            <button class="button_savoir_plus" href="lien vers en savoir plus">
+                <div class="dark_red">
+                <img class="image_info" src="images/icone_info.png" alt="En savoir plus" />
                 </div>
-                <div>
-                    <p class="texS Space_savoir_plus">En savoir plus</p>
+                <div class="light_red">
+                <p class="texS">En savoir plus</p>
                 </div>
             </button>
             <h3>
@@ -136,40 +128,37 @@
             </h3>
         </section>
 
-                                    <!--A la Une Slider-->
             <section class="container_news">
                 <h2>
                     À la une
                 </h2>
                 <div class="slideshow-container">
                     <div class="slide fade">
-                        <img src="images/devanture-musee.jpg" alt="Image 1">
-                        <div class="text"><h3>Cure de rajeunissement</h3></div>
+                    <img src="images/devanture-musee.jpg" alt="Image 1">
+                    <div class="text"><h3>Cure de rajeunissement</h3></div>
                     </div>
                     <div class="slide fade">
-                        <img src="images/vue_du_musee.jpg" alt="Image 3">
-                        <div class="text"><h3>Vue du musée</h3></div>
+                      <img src="images/vue_du_musee.jpg" alt="Image 3">
+                      <div class="text"><h3>Vue du musée</h3></div>
                     </div>
                     <div class="slide fade">
                         <img src="images/le_tigre_et_le_president.png" alt="Image 4">
                         <div class="text"><h3>Le Tigre et le Président un nouveau film au musée…</h3></div>
-                    </div>
-                        <div class="slide fade">
-                            <img src="images/carte_de_voeux.jpg" alt="Image 5">
-                            <div class="text"><h3>Creation de carte de voeux </h3></div>
-                        </div>
+                      </div>
+                      <div class="slide fade">
+                        <img src="images/carte_de_voeux.jpg" alt="Image 5">
+                        <div class="text"><h3>Creation de carte de voeux </h3></div>
+                      </div>
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
 
-                    <button class="button_savoir_plus_ALaUne" href="lien en savoir plus">                          <!--Faux lien-->
-                        <div class="square_info">
-                            <img class="image_info" src="images/icone_info.png" alt="En savoir plus" />
-                        </div>
-                        <div>
-                            <p class="texS Space_savoir_plus">En savoir plus</p>
-                        </div>
-                    </button>
-                </div>                                                                    <!--JE ME SUIS ARRETE ICI-->
+                </div>
+                <a href="En savoir plus">
+                    <img class="image_info" src="images/" alt=" En savoir plus">
+                </a>
+                <article>
+                </article>
             </section>
             <div class="horraire_comment_s_y_rendre">
                 <div>
@@ -210,22 +199,21 @@
                     </section>
                 </div>
             </div>
-            <h2>
-                Animations
-            </h2>
             <section class="container_animations">
-                <div id="left-arrow" class="arrow" >&#10094;</div>
-                <img src="images/la_fete_du_musee.jpg" alt="Description de l'image">
-                <div class="Animations_texte">
-                    <h2>La fête du musée</h2>
-                    <p>4 mai 2024 - 9 h 00 - 18 h 00</p>
-                </div>
-                <div id="right-arrow" class="arrow">&#10095; </div>
+                <h2>
+                    Animations
+                </h2>
+                      <img src="images/la_fete_du_musee.jpg" alt="Description de l'image">
+                    <div class="text">
+                      <h2>Titre</h2>
+                      <p>Paragraphe à droite de l'image.</p>
+                    </div>
+                  </div>
             </section>
-            <h2>
-                À venir
-            </h2>
-            <section class="container_carte">
+            <section class="container_coming">
+                <h2>
+                    À venir
+                </h2>
                 <article class="card enluminure">
                     <img class="image-card" src="images/a_venir_enluminure.jpg" alt="">
                     <div class="card-content">
