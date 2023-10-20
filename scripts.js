@@ -99,9 +99,9 @@ let lacurrentSlide = 0;
 
 function moveSlide(direction) {
   const slides = [
-      { img: 'images/la_fete_du_musee.jpg', title: 'La fête du la ville', date: '4 mai 2024 - 9 h 00 - 18 h 00' },
-      { img: 'images/a_venir_enluminure.jpg', title: 'La fête du musée', date: '4 - 18 h 00' },
-      { img: 'images/a_venir_enluminure.jpg', title: 'La fête du musée', date: '4 mai 2024 - 18 h 00' },
+      { img: 'images/la_fete_du_musee.webp', title: 'La fête du la ville', date: '4 mai 2024 - 9 h 00 - 18 h 00' },
+      { img: 'images/a_venir_enluminure.webp', title: 'La fête du musée', date: '4 - 18 h 00' },
+      { img: 'images/a_venir_enluminure.webp', title: 'La fête du musée', date: '4 mai 2024 - 18 h 00' },
   ];
 
   const imageElement = document.querySelector('.container_animations img');
