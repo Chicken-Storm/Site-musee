@@ -1056,5 +1056,26 @@ footer nav{
 
 .Content_P{
     display: flex;
-    
+
+}
+
+.Villes_Nantes{
+    max-width: 412px;
+    max-height: 158px;
+}
+
+.Moulin_papier{
+    max-width: 352px;
+    max-height: 238px;
+}
+
+.Amis_Musee{
+    max-width: 413px;
+    max-height: 106px;
+}
+
+.Graphiolis{
+    max-width: 422px;
+    max-height: 186px;
+
 }
