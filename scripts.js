@@ -19,9 +19,9 @@ window.onload = function() {
   var etatOuvertureElement = document.getElementById('etatOuverture');
 
   if (estOuvert) {
-      etatOuvertureElement.innerHTML = '<img src="images/cercle_vert_en_ligne.png" alt="Cercle en Vert pour indiquer si le musée est ouvert ou non"> Ouvert en ce moment';
+      etatOuvertureElement.innerHTML = '<img src="images/cercle_vert_en_ligne.webp" alt="Cercle en Vert pour indiquer si le musée est ouvert ou non"> Ouvert en ce moment';
   } else {
-      etatOuvertureElement.innerHTML = '<img src="images/cercle_rouge.png" alt="Cercle en Rouge pour indiquer que le musée est fermé"> Le musée est fermé';
+      etatOuvertureElement.innerHTML = '<img src="images/cercle_rouge.webp" alt="Cercle en Rouge pour indiquer que le musée est fermé"> Le musée est fermé';
   }
 }
 

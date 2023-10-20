@@ -56,7 +56,10 @@
 }
 
 
-
+.content-btn-absolute .button-link{
+    position: absolute;
+    bottom: 100px;
+}
 
 .button_billeterie_slider{
     display: flex;
