@@ -23,6 +23,7 @@
     margin-bottom: 15px;               /*Espacement entre le boutton et l'horaire en dessous*/
 }
 
+
 .button_billeterie_slider{
     display: flex;
     position: absolute;
@@ -599,7 +600,9 @@ nav{
     margin-top: 10px;
 }
 
+
 header{
+    color: white;
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -608,6 +611,36 @@ header{
     padding-left: 1%;
 }
 
+.burger-menu {
+    display: none;  /* Affichez le menu burger sur les petits écrans */
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex;  /* Affichez le menu burger sur les petits écrans */
+        position: absolute;
+        flex-direction: column;
+        left: 1%;  
+        background: none;
+        border: none;
+        font-size: 24px;  
+        cursor: pointer;
+    }
+
+    #logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    nav {
+        display: none; 
+    }
+
+    .nav-active {
+        display: flex;
+    }
+}
 
 
 
@@ -924,10 +957,18 @@ footer nav{
     padding: 90px; 
     margin-left: 200px;
     margin-right: 200px;
-
-
+    margin-top: 25px;
+    gap: 382px;
     background-color: var(--color-light-red);
   }
+
+  @media screen and (max-width: 1100px){
+    .retrouvez_nous{
+        flex-wrap: wrap;
+        gap: 100px;
+    }
+}
+
   .Retrouvez{
     text-align: center;
   }
@@ -949,7 +990,12 @@ footer nav{
     display: flex;
     gap: 41px;
     flex-direction: column;
+}
 
+@media screen and (max-width: 1100px){
+    .colonne_gauche{
+        align-items: center;
+    }
 }
 
 .colonne_droite{
@@ -959,12 +1005,6 @@ footer nav{
 
 }
 
-.retrouvez_nous{
-    margin-top: 25px;
-    display: flex;
-    gap: 382px;
-
-}
 
 .colonne_picto2{
     display: flex;

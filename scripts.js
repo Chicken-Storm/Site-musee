@@ -138,5 +138,12 @@ document.getElementById('right-arrow').addEventListener('click', function() {
   moveSlide(1);
 });
 
-
+document.querySelector('.burger-menu').addEventListener('click', function() {
+  const nav = document.querySelector('nav');
+  if (nav.style.display === 'none' || nav.style.display === '') {
+      nav.style.display = 'flex';
+  } else {
+      nav.style.display = 'none';
+  }
+});
 

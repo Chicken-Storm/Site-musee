@@ -4,7 +4,7 @@
                                     <!--Métadonnées et liens-->
 <head>
     <meta charset="UTF-8">                                                      <!--affiche les accents-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">      <!--pour afficher sur smartphone (responsive)-->
+    <meta name="Musée Atelier de l'Imprimerie de Nantes" content="width=device-width, initial-scale=1.0">      <!--pour afficher sur smartphone (responsive)-->
     <title>Le Musée de l'Imprimerie de Nantes</title>                           <!--titre de la page WEB-->
     <!--lie aux pages CSS internes-->
     <link rel="stylesheet" href="reset.css">
@@ -19,6 +19,10 @@
 <body>  
                                     <!--En-Tête-->
     <header>
+        <button class="burger-menu">
+            <img src="images/menu_burger.png" alt="">
+            <p>MENU</p>
+        </button>
         <img id="logo" src="images/logo_MAI_blanc.png" alt="Logo du Musée Atelier de l'Imprimerie de Nantes">   <!--image logo-->
         <nav>                                                                                                   <!--menu-->
             <ul class="link">                                                                                   <!--liste non ordonnée-->
@@ -33,12 +37,24 @@
                 </li>
                 
                 <div>                                                                                           <!--Bouton billeterie-->
-                    <button class="button_billeterie" href="lien billeterie">                                   <!--Faux lien-->
+                    <a class="button_billeterie" href="lien billeterie">                                   <!--Faux lien-->
                         <div class="light_red">                                                                 <!--Met le bloc en rouge clair-->
                         <p class="texS">Billeterie</p>
                         </div>
-                    </button>
+                    </a>
                     
+                    <a href="" class="button-link">
+                        <img src="http://placekitten.com/50/50" alt="">
+                        billeterie
+                      </a>
+                      
+                      <section class="expo">
+                        <a href="" class="button-link button-top">
+                          <img src="http://placekitten.com/50/50" alt="">
+                          billeterie
+                        </a>
+                      </section>
+
                     <li id="etatOuverture">                                                                     <!--horaires-->
                         <img src="images/cercle_vert_en_ligne.png" alt="Cercle Vert indiquant si le musée est ouvert ou non">
                     </li>
